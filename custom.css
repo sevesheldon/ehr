@@ -118,7 +118,7 @@ input.problem-input {
 .points-total {
 	font-weight: bold;
 	float: right;
-	margin: 50px 160px 200px 0;
+	margin: 50px 200px 200px 0;
 }
 
 
@@ -148,6 +148,48 @@ input.data-reviewed-input {
     width: 90%;
 }
 
+
+/* Risk To Patient */
+
+#risk-to-patient {
+	clear: both;
+}
+
+#risk-to-patient fieldset {
+    margin: 15px 25px;
+}
+
+.risk-to-patient-q {
+	margin: 20px 0;
+}
+
+#risk-to-patient label {
+    padding-top: 8px;
+}
+
+select#risk {
+    width: 70%;
+    float: right;
+}
+
+
+/* MDM Results */
+
+#mdm-results {
+	clear: both;
+}
+
+#mdm-results h3 {
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+table.tftable {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 
 
