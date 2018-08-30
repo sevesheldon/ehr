@@ -19,10 +19,15 @@ a:hover {
 	cursor: pointer;
 	text-decoration: none;
 	color: #000;
-	font-weight: 600;
+	/*font-weight: 600;*/
 }
 
 button {
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: 12px;
+    border: 2px solid black;
 }
 
 button:hover {
@@ -190,6 +195,45 @@ table.tftable {
     text-align: center;
     margin-bottom: 50px;
 }
+
+button#gen-target-code {
+    margin: 100px auto;
+}
+
+#next-section-history {
+	margin-top: 200px;
+}
+
+#next-section-history a {
+    background-color: #f4efb6;
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: 12px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+/* Arrow Down */
+
+.arrow-down {
+    text-align: center;
+    margin: 20px 0 500px 0;
+}
+
+i {
+  border: solid black;
+  border-width: 0 12px 12px 0;
+  display: inline-block;
+  padding: 40px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 
 
 
