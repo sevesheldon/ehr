@@ -75,10 +75,33 @@ section {
 	color: #515453;
 }
 
+.sub-section-title {
+	font-weight: bold;
+	margin-top: 75px;
+}
+
+#problem fieldset {
+	margin: 15px 25px;
+}
+
+.problem-q {
+	margin: 20px 0;
+}
+
 .plus-button img {
 	height: 29px;
 }
 
+input.problem-checkbox {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+input.problem-input {
+    margin-left: 25px;
+    margin-right: 10px;
+    width: 90%;
+}
 
 
 
