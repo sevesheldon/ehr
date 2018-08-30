@@ -45,7 +45,9 @@
 
 			<section id="intro-section">
 
-				<div id="intro">
+				<div id="intro" class="">
+
+					<!-- <div id="intro-color-bar-1" class="color-bar"></div> -->
 
 					<div id="est-new-patient" class="container">
 						<div class="row">
@@ -62,9 +64,9 @@
 						<div class="row">
 			                <div class="col-sm-10 form-horizontal">
 								<div class="form-group form-group-lg">
-									<label for="chiefcomplaint" class="col-sm-4 control-label">Chief Complaint</label>
+									<label for="chief-complaint-input" class="col-sm-4 control-label">Chief Complaint</label>
 									<div class="col-sm-8">
-										<input type="text" class="form-control" id="chiefcomplaint" placeholder="">
+										<input type="text" class="form-control" id="chief-complaint-input" placeholder="">
 									</div>
 								</div>
 			                </div>
@@ -80,6 +82,20 @@
 				<div id="mdm">
 					
 					<h2 id="mdm-title" class="section-title">Medial Decision Making</h2>
+
+					<div id="problem">
+						<h3 class="sub-section-title">Problem :</h3>
+							<fieldset id="problem-fieldset">
+								    <div id="problem_q1" class="">
+								        		
+										<input type="checkbox" for="problem-q1">Self-limited or minor problem (max. of 2)</input>
+										<br>
+										<input type="text" id="probem-q1" name="problem-q1" />
+								
+								    </div>								
+							</fieldset>
+
+					</div>
 
 				</div>
 
