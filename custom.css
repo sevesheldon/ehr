@@ -250,6 +250,34 @@ i {
     font-weight: bold;
 }
 
+h5#hpi {
+    margin-bottom: 50px;
+}
+
+form#HPIform .form-group.col-sm-12 {
+    margin-bottom: 30px;
+}
+
+form#HPIform .col-sm-10 {
+    float: right;
+}
+
+form#HPIform .form-group.col-sm-6 {
+    float: left;
+}
+
+form#HPIform .col-sm-8 {
+    float: left;
+}
+
+form#HPIform label.col-sm-4.control-label {
+    float: left;
+}
+
+input.HPIElement {
+    margin-bottom: 20px;
+}
+
 
 
 
