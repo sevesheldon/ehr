@@ -153,6 +153,12 @@ input.data-reviewed-input {
     width: 90%;
 }
 
+textarea.data-reviewed-input {
+    margin-left: 25px;
+    margin-right: 10px;
+    width: 90%;
+}
+
 
 /* Risk To Patient */
 
@@ -198,6 +204,7 @@ table.tftable {
 
 button#gen-target-code {
     margin: 100px auto;
+    border: 5px solid black;
 }
 
 #next-section-history {
@@ -233,6 +240,38 @@ i {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+
+/* History */
+
+#level-history {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
