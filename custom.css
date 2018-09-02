@@ -306,6 +306,7 @@ textarea.add-notes-input {
 
 /* PFSH */
 
+/* Section 1 */
 
 h5#pfsh-title {
     margin-bottom: 40px;
@@ -327,6 +328,20 @@ textarea.pfsh-element {
     font-weight: bold;
 }
 
+/* Section 2 */
+
+section #pfsh-sect2 .form-group.col-sm-6 {
+    float: left;
+}
+
+section#pfsh-sect2 {
+    text-align: center;
+}
+
+input.pfsh-checkbox {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
 
 
 

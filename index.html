@@ -317,25 +317,11 @@
 
 				    <div id="pfsh">
 
-					    <h5 id="pfsh-title" class="sub-section-title">Past Medical, Family and Social History:</h5>
+					    <h5 id="pfsh-title" class="sub-section-title">Past Medical, Family and Social History:</h5>					   
 					    
-					    <p style="text-align: center; margin-bottom: 40px;">Please write in complete sentences</p>
-					    
-					    <form id="pfsh-form">
-							<!-- <section class="clearfix">
-								<div class="form-group col-sm-12">
-									<label for="PFSHmedical" class="col-sm-4 control-label">Pertinent medical info from intake questionnaire, and/or pt's current list of medications and allergies.</label>
-									<div class="col-sm-8">
-										<textarea class="form-control" id="PFSHmedical" rows="5" name="PFSHmedical"></textarea>
-									</div>
-									<label for="PFSHfamily" class="col-sm-4 control-label">Pertinent family history from intake questionnaire.</label>
-									<div class="col-sm-8">
-										<textarea type="text" class="form-control PFSHFamilyElement" id="PFSHfamily" rows="3"></textarea>
-									</div>
-								</div>
-							</section> -->
-
-							<section class="clearfix">
+					    <form id="pfsh-form">					
+					    	<p style="text-align: center; margin-bottom: 40px;">Please write in complete sentences</p>
+							<section id="pfsh-sect1" class="clearfix">
 								<div class="form-group col-sm-12">
 									<label for="pfsh-q1" class="col-sm-4 control-label">Pertinent medical info from the intake questionnaire, and/or patient's current list of medications and allergies:</label>
 									<div class="col-sm-8">
@@ -392,14 +378,26 @@
 									<label for="pfsh-q14" class="col-sm-4 control-label">Pertinent social issues affecting health:</label>
 									<div class="col-sm-8">
 										<textarea class="form-control pfsh-element" id="pfsh-q14" name="pfsh-q14" rows="4"></textarea>
-									</div>
-								
-
-									
+									</div>	
 								</div>
 							</section>
 
+							<section id="pfsh-sect2" class="clearfix">
+								<p style="text-align: center; margin-bottom: 40px; font-weight: bold;">Check boxes for "Yes"</p>
+								<div class="form-group col-sm-6">
+									<div id="pfsh-sect2-q1" class="pfsh-sect2-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q1">Has a job?</input>
+									</div>
+								</div>
 
+
+
+								<div class="form-group col-sm-6">
+									<div id="pfsh-sect2-q9" class="pfsh-sect2-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q9">Moved around a lot?</input>
+									</div>
+								</div>
+							</section>
 					    </form>
 
 					</div> 
