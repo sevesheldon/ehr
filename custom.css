@@ -311,7 +311,7 @@ h5#pfsh-title {
     margin-bottom: 40px;
 }
 
-form#pfsh-form.col-sm-10, form#pfsh-form .col-sm-8  {
+form#pfsh-form .col-sm-10, form#pfsh-form .col-sm-8  {
     float: left;
 }
 
@@ -321,6 +321,10 @@ form#pfsh-form label.col-sm-4.control-label, form#pfsh-form label.col-sm-2.contr
 
 textarea.pfsh-element {
     margin-bottom: 20px;
+}
+
+.pfsh-bold {
+    font-weight: bold;
 }
 
 
