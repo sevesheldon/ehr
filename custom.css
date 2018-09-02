@@ -258,7 +258,9 @@ i {
     font-weight: bold;
 }
 
-h5#hpi {
+/* HPI */
+
+h5#hpi-title {
     margin-bottom: 50px;
 }
 
@@ -302,7 +304,24 @@ textarea.add-notes-input {
     width: 90%;
 }
 
+/* PFSH */
 
+
+h5#pfsh-title {
+    margin-bottom: 40px;
+}
+
+form#pfsh-form.col-sm-10, form#pfsh-form .col-sm-8  {
+    float: left;
+}
+
+form#pfsh-form label.col-sm-4.control-label, form#pfsh-form label.col-sm-2.control-label {
+    float: left;
+}
+
+textarea.pfsh-element {
+    margin-bottom: 20px;
+}
 
 
 

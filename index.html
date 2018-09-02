@@ -251,65 +251,108 @@
 
 				<h5 id="level-history" class="level">Level:</h5>
 
-				<h5 id="hpi" class="sub-section-title">History of Present Illness:</h5>
+				<div id="hpi">
 
-				<form id="HPIform">
-						<section class="clearfix">
-							<div class="form-group col-sm-12">
-								<label for="HPIname" class="col-sm-2 control-label">Name of Illness</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="HPIname" name="HPIname">
-								</div>
-							</div>
-						</section>
-						
-						<section class="clearfix">
-							<div class="form-group col-sm-6">
-								<label for="HPIduration" class="col-sm-4 control-label">Duration</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPIduration">
-								</div>
-								<label for="HPIsymptoms" class="col-sm-4 control-label">Signs/Symptoms</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPIsymptoms">
-								</div>
-								<label for="HPItiming" class="col-sm-4 control-label">Timing</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPItiming" placeholder="">
-								</div>
-								<label for="HPIseverity" class="col-sm-4 control-label">Severity</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPIseverity" placeholder="">
-								</div>
-							</div>
-							<div class="form-group col-sm-6">
-								<label for="HPIcontext" class="col-sm-4 control-label">Context</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPIcontext" placeholder="">
-								</div>
-								<label for="HPIfactors" class="col-sm-4 control-label">Modifying Factors</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPIfactors" placeholder="">
-								</div>
-								<label for="HPIlocation" class="col-sm-4 control-label">Location in the Body</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPIlocation">
-								</div>
-								<label for="HPIquality" class="col-sm-4 control-label">Quality</label>
-								<div class="col-sm-8">
-									<input type="text" class="form-control HPIElement" id="HPIquality">
-								</div>
-							</div>
-						</section>
-					</form>
+					<h5 id="hpi-title" class="sub-section-title">History of Present Illness:</h5>
 
-					<div id="add-notes-hpi" class="add-notes">
-								        		
-						<input type="checkbox" class="add-notes-checkbox" for="add-notes-hpi">Additional Notes</input>
-						<br>
-						<textarea id="add-notes-hpi-textarea" class="add-notes-input" name="add-notes-hpi" rows="4"></textarea>
-				
-				    </div> 
+					<form id="HPIform">
+							<section class="clearfix">
+								<div class="form-group col-sm-12">
+									<label for="HPIname" class="col-sm-2 control-label">Name of Illness</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="HPIname" name="HPIname">
+									</div>
+								</div>
+							</section>
+							
+							<section class="clearfix">
+								<div class="form-group col-sm-6">
+									<label for="HPIduration" class="col-sm-4 control-label">Duration</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPIduration">
+									</div>
+									<label for="HPIsymptoms" class="col-sm-4 control-label">Signs/Symptoms</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPIsymptoms">
+									</div>
+									<label for="HPItiming" class="col-sm-4 control-label">Timing</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPItiming" placeholder="">
+									</div>
+									<label for="HPIseverity" class="col-sm-4 control-label">Severity</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPIseverity" placeholder="">
+									</div>
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="HPIcontext" class="col-sm-4 control-label">Context</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPIcontext" placeholder="">
+									</div>
+									<label for="HPIfactors" class="col-sm-4 control-label">Modifying Factors</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPIfactors" placeholder="">
+									</div>
+									<label for="HPIlocation" class="col-sm-4 control-label">Location in the Body</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPIlocation">
+									</div>
+									<label for="HPIquality" class="col-sm-4 control-label">Quality</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control HPIElement" id="HPIquality">
+									</div>
+								</div>
+							</section>
+						</form>
+
+						<div id="add-notes-hpi" class="add-notes">
+									        		
+							<input type="checkbox" class="add-notes-checkbox" for="add-notes-hpi">Additional Notes</input>
+							<br>
+							<textarea id="add-notes-hpi-textarea" class="add-notes-input" name="add-notes-hpi" rows="4"></textarea>
+					
+					    </div>
+
+				    </div>
+
+				    <div id="pfsh">
+
+					    <h5 id="pfsh-title" class="sub-section-title">Past Medical, Family and Social History:</h5>
+					    
+					    <p style="text-align: center; margin-bottom: 40px;">Please write in complete sentences</p>
+					    
+					    <form id="pfsh-form">
+							<!-- <section class="clearfix">
+								<div class="form-group col-sm-12">
+									<label for="PFSHmedical" class="col-sm-4 control-label">Pertinent medical info from intake questionnaire, and/or pt's current list of medications and allergies.</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" id="PFSHmedical" rows="5" name="PFSHmedical"></textarea>
+									</div>
+									<label for="PFSHfamily" class="col-sm-4 control-label">Pertinent family history from intake questionnaire.</label>
+									<div class="col-sm-8">
+										<textarea type="text" class="form-control PFSHFamilyElement" id="PFSHfamily" rows="3"></textarea>
+									</div>
+								</div>
+							</section> -->
+
+							<section class="clearfix">
+								<div class="form-group col-sm-12">
+									<label for="pfsh-q1" class="col-sm-4 control-label">Pertinent medical info from the intake questionnaire, and/or patient's current list of medications and allergies:</label>
+									<div class="col-sm-8">
+										<textarea class="form-control pfsh-element" id="pfsh-q1" name="pfsh-q1" rows="5"></textarea>
+									</div>
+									<label for="pfsh-q2" class="col-sm-4 control-label">Pertinent medical info from the intake questionnaire, and/or patient's current list of medications and allergies:</label>
+									<div class="col-sm-8">
+										<textarea class="form-control pfsh-element" id="pfsh-q2" name="pfsh-q2" rows="5"></textarea>
+									</div>
+									
+								</div>
+							</section>
+
+
+					    </form>
+
+					</div> 
 
 			</section>	
 
