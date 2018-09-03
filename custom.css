@@ -335,12 +335,22 @@ section #pfsh-sect2 .form-group.col-sm-6 {
 }
 
 section#pfsh-sect2 {
-    text-align: center;
+    margin: 20px 10%;
 }
 
 input.pfsh-checkbox {
     margin-right: 10px;
     margin-bottom: 15px;
+}
+
+.pfsh-sect2-q {
+    margin-bottom: 15px;
+    line-height: .5;
+}
+
+input.pfsh-sect2-input {
+    width: 90%;
+    margin-left: 20px;
 }
 
 
