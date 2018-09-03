@@ -358,9 +358,45 @@ input#pfsh-q17 {
     margin-bottom: 25px;
 }
 
+/* ROS */
 
+h5#ros-title {
+    margin-bottom: 25px;
+}
 
+#ros p {
+    line-height: .5;
+}
 
+section #ros-sect1 .form-group.col-sm-6 {
+    float: left;
+}
+
+section#ros-sect1 {
+    margin: 30px 10% 40px 13%;
+}
+
+section#ros-sect1 h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ros-sect {
+    margin-top: 30px;
+}
+
+.ros-q {
+
+}
+
+input.ros-checkbox {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+#constitutional {
+    margin-bottom: 63px;
+}
 
 
 
