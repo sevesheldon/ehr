@@ -215,18 +215,21 @@ button#gen-target-code {
     border: 5px solid black;
 }
 
-#next-section-history {
-	margin-top: 200px;
+.next-section {
+    margin-top: 200px;
 }
 
-#next-section-history a {
-    background-color: #f4efb6;
+.next-section a {
     width: 250px;
     display: block;
     margin: auto;
     padding: 12px;
     border: 2px solid black;
     text-align: center;
+}
+
+#next-section-history a {
+    background-color: #f4efb6;
 }
 
 
@@ -422,6 +425,15 @@ input.ros-checkbox {
 
 textarea#ros-elab {
     width: 90%;
+}
+
+#next-section-physical a {
+    background-color: #deecc1;
+    width: 260px;
+}
+
+#next-section-physical {
+    margin-top: 100px;
 }
 
 
