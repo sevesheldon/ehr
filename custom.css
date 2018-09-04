@@ -505,6 +505,49 @@ p#general-p {
 }
 
 
+/* Speech */
+
+#physical-row3 {
+    margin-top: -70px;
+}
+
+#speech-left h5 {
+    float: left;
+}
+
+#speech-left-title-p {
+    margin: 4px 0 0 3px;
+}
+
+.speech-q {
+    margin-bottom: 5px;
+}
+
+p#speech-left-title-p {
+    margin: 2px 0px 20px 6px !important;
+    float: left;
+}
+
+p#speech-left-p {
+    margin-bottom: 20px !important;
+}
+
+p#speech-right-p {
+    margin-bottom: 15px !important;
+}
+
+#speech-right {
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+}
+
+textarea#speech-right-text {
+    width: 90%;
+}
+
+
+
 
 
 
