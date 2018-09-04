@@ -668,10 +668,10 @@
 				<h5 id="level-physical" class="level">Level:</h5>
 
 				<form id="physical-form">
-					<div id="vital">
-						<h5>Vital Signs</h5>
-						<p>At least 3 are required:</p>
-						<div class="row">
+					<div id="physical-row1" class="row">
+						<div id="vital">
+							<h5>Vital Signs</h5>
+							<p>At least 3 are required:</p>
 							<div class="form-group col-sm-6">
 								<label for="vital-q1" class="col-sm-6 control-label">Blood Pressure</label>
 								<div class="col-sm-6">
@@ -702,9 +702,43 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
+					<div id="physical-row2" class="row">
+						<div class="form-group col-sm-3">
+							<div id="body">
+								<h5>Body Habitus</h5>
+								<p>Select only one box:</p>
+								<div id="body-q1" class="body-q">
+									<input type="checkbox" class="body-checkbox" for="body-q1">Endomorphic</input>
+								</div>
+								<div id="body-q2" class="body-q">
+									<input type="checkbox" class="body-checkbox" for="body-q2">Ectomorphic</input>
+								</div>
+								<div id="body-q3" class="body-q">
+									<input type="checkbox" class="body-checkbox" for="body-q3">Mesomorphic</input>
+								</div>
 
+							</div>
+						</div>
+						<div class="form-group col-sm-9">
+							<div id="general">
+								<h5>General Appearance</h5>
+								<p id="general-p">Check box for "Yes", if not checked please elaborate in text field:</p>
+								<div id="general-q1" class="general-q">
+										<input type="checkbox" class="general-checkbox" for="general-q1">Appropriately groomed and dressed?</input>
+										<input type="text"  class="general-input" name="general-q1" placeholder="ie. Inappropriately groomed"/> 
+								</div>
+								<div id="general-q2" class="general-q">
+										<input type="checkbox" class="general-checkbox" for="general-q2">Well-nourished?</input>
+										<input type="text"  class="general-input" name="general-q2" placeholder="ie. Nutritional deficiencies"/> 
+								</div>
+								<div id="general-q3" class="general-q">
+										<input type="checkbox" class="general-checkbox" for="general-q3">Well-developed?</input>
+										<input type="text"  class="general-input" name="general-q3" placeholder="ie. Has deformities relevant to mental status"/> 
+								</div>
+							</div>
+						</div>
+					</div>
 				</form>
 
 			</section>

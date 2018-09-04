@@ -469,8 +469,40 @@ label.col-sm-6.control-label {
     margin-bottom: 20px;
 }
 
+div#vital {
+    margin-bottom: 20px;
+}
+
+/* Body Habitus */
+
+input.body-checkbox {
+    margin: 0 10px 15px 20px;
+}
+
+.body-q {
+    margin-bottom: 10px;
+}
 
 
+/* General Appearance */
+
+#general {
+    margin-left: 70px;
+}
+
+input.general-checkbox {
+    margin: 0 10px 15px 20px;
+}
+
+input.general-input {
+    display: block;
+    width: 90%;
+    margin: 0 0 20px 40px;
+}
+
+p#general-p {
+    margin-bottom: 15px !important;
+}
 
 
 
