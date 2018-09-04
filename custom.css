@@ -384,7 +384,8 @@ section #ros-sect1 .form-group.col-sm-6 {
 }
 
 section#ros-sect1 {
-    margin: 30px 10% 40px 13%;
+    margin: 30px 8% 40px 17%;
+
 }
 
 section#ros-sect1 h5 {
@@ -420,7 +421,7 @@ input.ros-checkbox {
 }
 
 #ros-not {
-    margin: 0 10% 10px 13%;
+    margin: 0 8% 10px 17%;
 }
 
 textarea#ros-elab {
@@ -446,16 +447,26 @@ section#physical-section h5 {
 
 section#physical-section p {
     color: #515453;
+    margin-bottom: 30px;
 }
 
 section#physical-section {
-    margin: 0 10% 40px 10%;
+    margin: 0 8% 40px 10%;
 }
 
 /* Vital Signs */
 
 #vital h5 {
     margin-top: 60px;
+}
+
+label.col-sm-6.control-label {
+    float: left;
+}
+
+#vital .col-sm-6 {
+    float: left;
+    margin-bottom: 20px;
 }
 
 
