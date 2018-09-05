@@ -594,6 +594,29 @@ textarea#assoc-text {
     width: 94%;
 }
 
+/* Risk Factors / Psychotic Thoughts */
+
+#physical-row5 {
+    margin-top: 40px;
+}
+
+.risk-q {
+    margin-bottom: 5px;
+}
+
+#risk-right {
+    margin-top: 70px;
+}
+
+#risk-right p {
+    margin-bottom: 15px !important;
+    margin-top: 15px;
+}
+
+textarea#risk-right-text {
+    width: 94%;
+}
+
 
 
 
