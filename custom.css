@@ -546,6 +546,55 @@ textarea#speech-right-text {
     width: 90%;
 }
 
+/* Thought Content */
+
+#physical-row4 {
+    margin-top: 50px;
+}
+
+.thought-q {
+    margin-bottom: 5px;
+}
+
+p#thought-right-p {
+    margin-bottom: 15px !important;
+}
+
+textarea#thought-right-text {
+    width: 94%;
+}
+
+/* Associations */
+
+
+
+#associations h5 {
+    margin-top: 40px;
+}
+
+#associations .form-group.col-sm-3 {
+    float: left;
+    margin-top: 35px;
+}
+
+#associations .form-group.col-sm-9 {
+    float: left;
+    padding-left: 30px;
+}
+
+p#assoc-p {
+    margin-bottom: 15px !important;
+}
+
+.assoc-q {
+    margin-bottom: 5px;
+}
+
+textarea#assoc-text {
+    width: 94%;
+}
+
+
 
 
 
