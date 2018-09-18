@@ -2,12 +2,16 @@ $( document ).ready(function() {
     
 
     console.log( "ready!" );
+    
+    textCheckboxTrigger();
 
-    SimpleScoringModel('#problem', '#problem input[type="text"]', '#problem_score');
+    simpleScoringModel('#problem', '#problem input[type="text"]', '#problem_score');
 
-    SimpleScoringModel('#hpi_validate', '#hpi_validate input', '#hpi_score');
+    simpleScoringModel('#hpi_validate', '#hpi_validate input', '#hpi_score');
 
-    SimpleScoringModel('#pfsh-form', '#pfsh-form textarea', '#pfsh_score');
+    simpleScoringModel('#pfsh-form', '#pfsh-form textarea', '#pfsh_score');
+
+    checkboxScoringModel('#data-reviewed', '#data-reviewed input', '#data_score');
 });
 
 
@@ -29,7 +33,7 @@ function addInput(elem, type){
 	$(parent).append(newInput);
 }
 
-function SimpleScoringModel(container, group, echo){
+function simpleScoringModel(container, group, echo){
 	//on keyup for any input in a defined group(container)...
 	$(container).on('keyup', function(){
 		//set a variable to track score
@@ -48,6 +52,37 @@ function SimpleScoringModel(container, group, echo){
 	})
 }
 
+
+
+function checkboxScoringModel(container, group, echo){
+	//on keyup for any input in a defined group(container)...
+	$(container).on('click', function(){
+		//set a variable to track score
+		score = 0
+		//iterate through inputs in the group (group)
+		$(group).each(function(){
+			//if the input has any value (not blank)
+			if($(this).is(':checked')){
+				//increment the variable
+				score++;
+			}
+		})
+		//after calculating total, echo the result to the document (echo)
+		$(echo).html( score );
+		$(echo).attr('data-score', score);
+	})
+}
+
+// to use this function to auto-check checkboxes with associated text input, just add the textCheckbox class to the direct parent container
+function textCheckboxTrigger(){
+	$('.textCheckbox textarea, .textCheckbox input').on('keyup', function(){
+		if( $(this).val().length ){
+			$(this).parent('.textCheckbox').find('input[type="checkbox"]').prop('checked', true);
+		} else {
+			$(this).parent('.textCheckbox').find('input[type="checkbox"]').prop('checked', false);
+		}
+	})
+}
 
 
 
