@@ -198,22 +198,25 @@
 									  <label for="risk">Select from the dropdown menu:</label>
 									  <select class="form-control" id="risk">
 									  	<option value="" selected disabled>Please select one of the following</option>
-									    <option>Having only one minor (self-limiting) problem</option>
-									    <option>Stopping, starting, or changing Rx (other than LiCo)</option>
-									    <option>Drug therapy requiring intensive monitoring for toxicity</option>
-									    <option>Having only 1 well-controlled chronic illness</option>
-									    <option>Having 1+ worsening chronic illness</option>
-									    <option>Having 2+ well-controlled chronic illnesses</option>
-									    <option>A new problem with uncertain diagnosis</option>
-									    <option>Severe exacerbation of chronic illness</option>
-									    <option>Acute symptoms with potential threat to self or others</option>
-									    <option>An abrupt change in neurologic status</option>
+									 
+									    <option value="low">having only 1 well-controlled chronic illness</option>
+									    <option value="low">Having only one minor (self-limiting) problem</option>
+									    <option value="moderate">Stopping, starting, or changing Rx (other than LiCo)</option>
+									    <option value="moderate">Drug therapy requiring intensive monitoring for toxicity</option>
+									    
+									    <option value="moderate">Having 1+ worsening chronic illness</option>
+									    <option value="moderate">Having 2+ well-controlled chronic illnesses</option>
+									    <option value="moderate">A new problem with uncertain diagnosis</option>
+									    <option value="high">Severe exacerbation of chronic illness</option>
+									    <option value="high">Acute symptoms with potential threat to self or others</option>
+									    <option value="high">drug therapy requiring intensive monitoring for toxicity</option>
+									    <option value="high">An abrupt change in neurologic status</option>
 									  </select>
 									</div>  
 								</div>
 							</fieldset>
 
-						<h4 id="level-of-risk" class="points-total">Level of Risk :</h4>
+						<h4 id="level-of-risk" class="points-total">Level of Risk :<span id="risk_score"></span></h4>
 							
 					</div>
 

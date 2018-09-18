@@ -12,6 +12,8 @@ $( document ).ready(function() {
     simpleScoringModel('#pfsh-form', '#pfsh-form textarea', '#pfsh_score');
 
     checkboxScoringModel('#data-reviewed', '#data-reviewed input', '#data_score');
+
+    selectScore('#risk', '#risk_score');
 });
 
 
@@ -84,6 +86,11 @@ function textCheckboxTrigger(){
 	})
 }
 
+function selectScore(select, echo){
+	$(select).on('change', function(){
+		$(echo).html($(this).val());
+	})
+}
 
 
 function HPI_Model(){
