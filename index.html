@@ -93,7 +93,7 @@
 										<input type="checkbox" class="problem-checkbox" for="problem-q1">Self-limited or minor problem (max. of 2)</input>
 										<br>
 										<input type="text" id="problem-q1" class="problem-input" name="problem-q1" /> 
-										<a class="plus-button" onclick="myFunction()"><img src="img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>
 
@@ -102,7 +102,7 @@
 										<input type="checkbox" class="problem-checkbox" for="problem-q2">Established problem, stable</input>
 										<br>
 										<input type="text" id="problem-q2" class="problem-input" name="problem-q2" />
-										<a class="plus-button" onclick="myFunction()"><img src="img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>
 
@@ -111,7 +111,7 @@
 										<input type="checkbox" class="problem-checkbox" for="problem-q3">Established problem, worsening</input>
 										<br>
 										<input type="text" id="problem-q3" class="problem-input" name="problem-q3" />
-										<a class="plus-button" onclick="myFunction()"><img src="img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>		
 
@@ -128,12 +128,12 @@
 										<input type="checkbox" class="problem-checkbox" for="problem-q5">New problem, additional work-up planned</input>
 										<br>
 										<input type="text" id="problem-q5" class="problem-input" name="problem-q5" />
-										<a class="plus-button" onclick="myFunction()"><img src="img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>					
 							</fieldset>
 
-						<h4 id="problem-points" class="points-total">Problem Points :</h4>
+						<h4 id="problem-points" class="points-total">Problem Points :<span id="problem_score"></span></h4>
 
 					</div>
 
@@ -304,7 +304,7 @@
 									</div>
 								</div>
 							</section>
-							<h1 id="hpi_score"></h1>
+							<h1>HPI Score: <span id="hpi_score"></span></h1>
 						</form>
 
 						<div id="add-notes-hpi" class="add-notes">
@@ -320,7 +320,7 @@
 				    <div id="pfsh">
 
 					    <h5 id="pfsh-title" class="sub-section-title">Past Medical, Family and Social History:</h5>					   
-					    
+					    <h1>PFSH Score: <span id="pfsh_score"></span></h1>
 					    <form id="pfsh-form">					
 					    	<p>Please write in complete sentences</p>
 							<section id="pfsh-sect1" class="clearfix">

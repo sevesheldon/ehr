@@ -3,9 +3,12 @@ $( document ).ready(function() {
 
     console.log( "ready!" );
 
-    SimpleScoringModel('#hpi_validate input', '#hpi_score')
-});
+    SimpleScoringModel('#problem', '#problem input[type="text"]', '#problem_score');
 
+    SimpleScoringModel('#hpi_validate', '#hpi_validate input', '#hpi_score');
+
+    SimpleScoringModel('#pfsh-form', '#pfsh-form textarea', '#pfsh_score');
+});
 
 
 // $("#next-section-history a").on('click', function (){ 
@@ -19,14 +22,19 @@ $("#next-section-history a").click(function() {
 });
 
 
+function addInput(elem, type){
+	parent = $(elem).parent();
+	sibling = $(parent).find('input[type="'+ type +'"]');
+	newInput = '<input type="' + type + '" class="' + sibling.attr('class') + '">';
+	$(parent).append(newInput);
+}
 
-
-function SimpleScoringModel(group, echo){
-	//on keyup for any input in a defined group...
-	$(group).on('keyup', function(){
+function SimpleScoringModel(container, group, echo){
+	//on keyup for any input in a defined group(container)...
+	$(container).on('keyup', function(){
 		//set a variable to track score
 		score = 0
-		//iterate through inputs in the group
+		//iterate through inputs in the group (group)
 		$(group).each(function(){
 			//if the input has any value (not blank)
 			if($(this).val().length){
@@ -34,8 +42,9 @@ function SimpleScoringModel(group, echo){
 				score++;
 			}
 		})
-		//after calculating total, echo the result to the document
-		$(echo).html('hpi score: ' + score );
+		//after calculating total, echo the result to the document (echo)
+		$(echo).html( score );
+		$(echo).attr('data-score', score);
 	})
 }
 
