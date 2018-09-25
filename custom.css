@@ -49,21 +49,46 @@ textarea, input {
 /* Header */
 
 #header {
-	height: 75px;
-	min-height: 50px;
-	padding-top: 10px;
-	margin-bottom: 20px;
-	background-color: #f2faf9;
-	border-bottom: 3px solid #717872;
+	height: 65px;
+    min-height: 50px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    background-color: #f2faf9;
+    position: fixed;
+    border-bottom: 3px solid #717872;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999999;
 }
+#header nav ul {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 
+}
 #header nav ul li {
     list-style-type: none;
     float: left;
-    margin: 0px 30px;
+    text-align: center;
+}
+nav, nav ul, nav li, nav a {
+    height: 100%;
+    line-height: 60px;
+}
+#header nav ul li.valid {
+    background-color: green;
 }
 
 
+
+
+#wrapper {
+    padding: 100px 0 0;
+}
 /* Intro */
 
 #est-new-patient .row .col {
@@ -125,7 +150,9 @@ input.problem-input {
 .points-total {
 	font-weight: bold;
 	float: right;
-	margin: 50px 200px 200px 0;
+	margin: 50 0;
+    float: left;
+    clear: both;
 }
 
 
@@ -708,5 +735,10 @@ footer p {
 
 
 
+
+
+td.valid{
+    background-color: green;
+}
 
 

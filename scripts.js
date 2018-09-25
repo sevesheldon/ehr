@@ -2,7 +2,7 @@ $( document ).ready(function() {
     
 
     console.log( "ready!" );
-    
+    patient();
     textCheckboxTrigger();
 
     simpleScoringModel('#problem', '#problem input[type="text"]', '#problem_score');
@@ -27,7 +27,13 @@ $("#next-section-history a").click(function() {
     }, 750);
 });
 
-
+function patient(){
+	$("#est-new-patient button").on('click', function(){
+		$("#est-new-patient button").removeClass('clicked');
+		$(this).addClass('clicked');
+		$("#patient_status").html( $(this).html() );
+	})
+}
 function addInput(elem, type){
 	parent = $(elem).parent();
 	sibling = $(parent).find('input[type="'+ type +'"]');

@@ -23,19 +23,30 @@
 		<div id="header">
 			<nav>
 				<ul>
-					<li><a href="#">Medical Decision Making</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">History</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Physical Exam</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Psychotherapy</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Logout</a></li>
+					<li id="nav_mdm"><a href="#">Medical Decision Making</a></li>
+
+					<li id="nav_history"><a href="#">History</a></li>
+
+					<li id="nav_physical"><a href="#">Physical Exam</a></li>
+
+					<li id="nav_therapy"><a href="#">Psychotherapy</a></li>
+
+					<li><select id="target_code">
+					  	<option value="" selected disabled>Target Code</option>
+					  	<option value="" disabled>New Patients</option>
+					  	<option value="99201">99201</option>
+					  	<option value="99202">99202</option>
+					  	<option value="99203">99203</option>
+					  	<option value="99204">99204</option>
+					  	<option value="99205">99205</option>
+					  	<option value="" disabled>Established Patients</option>
+					  	<option value="99211">99211</option>
+					  	<option value="99212">99212</option>
+					  	<option value="99213">99213</option>
+					  	<option value="99214">99214</option>
+					  	<option value="99215">99215</option>
+					  </select>
+					</li>
 				</ul>
 
 
@@ -53,11 +64,11 @@
 
 					<div id="est-new-patient" class="container">
 						<div class="row">
-							<div class="col" id="est-patient">
-								<button>Established Patient</button>
+							<div class="col" >
+								<button id="est-patient">Established Patient</button>
 							</div>
-							<div class="col" id="new-patient">
-								<button>New Patient</button>
+							<div class="col" >
+								<button id="new-patient">New Patient</button>
 							</div>
 						</div>
 					</div>
@@ -133,7 +144,7 @@
 								    </div>					
 							</fieldset>
 
-						<h4 id="problem-points" class="points-total">Problem Points :<span id="problem_score"></span></h4>
+						
 
 					</div>
 
@@ -186,7 +197,7 @@
 							    </div>
 							</fieldset>
 
-						<h4 id="data-points" class="points-total">Data Points :<span id="data_score"></span></h4>	
+							
 
 					</div>
 
@@ -216,7 +227,7 @@
 								</div>
 							</fieldset>
 
-						<h4 id="level-of-risk" class="points-total">Level of Risk :<span id="risk_score"></span></h4>
+						
 							
 					</div>
 
@@ -225,14 +236,43 @@
 
 						<div id="mdm-results-table">
 							<table class="tftable" border="1">
-							<tr><th>MDM</th><th>Problem Points</th><th>Data Points</th><th>Risk Level</th></tr>
-							<tr><td>Straightforward</td><td>0 - 1</td><td>0 - 1</td><td>Minimum</td></tr>
-							<tr><td>Low</td><td>2</td><td>2</td><td>Low</td></tr>
-							<tr><td>Moderate</td><td>3</td><td>3</td><td>Moderate</td></tr>
-							<tr><td>High</td><td>4</td><td>4</td><td>High</td></tr>
+								<tr>
+									<th>MDM</th>
+									<th>Problem Points</th>
+									<th>Data Points</th>
+									<th>Risk Level</th>
+								</tr>
+								<tr>
+									<td>Straightforward</td>
+									<td>0 - 1</td>
+									<td>0 - 1</td>
+									<td>Minimum</td>
+								</tr>
+								<tr>
+									<td>Low</td>
+									<td>2</td>
+									<td>2</td>
+									<td>Low</td>
+								</tr>
+								<tr>
+									<td>Moderate</td>
+									<td>3</td>
+									<td>3</td>
+									<td>Moderate</td>
+								</tr>
+								<tr>
+									<td>High</td>
+									<td>4</td>
+									<td>4</td>
+									<td>High</td>
+								</tr>
 							</table>
 						</div>
-
+<p id="patient-status" class="points-total">Patient Status :<span id="patient_status"></span></p>
+<p id="problem-points" class="points-total">Problem Points :<span id="problem_score"></span></p>
+<p id="data-points" class="points-total">Data Points :<span id="data_score"></span></p>
+<p id="level-of-risk" class="points-total">Level of Risk :<span id="risk_score"></span></p>
+<br/>
 						<button id="gen-target-code" class="gen-button">Generate Target Code</button>
 
 					</div>
