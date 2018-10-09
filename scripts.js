@@ -128,26 +128,26 @@ function HPI_Model(){
 
 
 mdm = {
-	problem: score,
-	data: score,
-	risk: score,
-	total: totalScore
+	problem: 0,
+	data: 0,
+	risk: 0,
+	total: 0
 }
 currentMdm = {
-	problem: score,
-	data: score,
-	risk: score
+	problem: 0,
+	data: 0,
+	risk: 0
 }
 
 
 history = {
-	hpi: score,
-	pfsh: score,
-	ros: score
+	hpi: 0,
+	pfsh: 0,
+	ros: 0
 }
 currentHistory = {
-	hpi: score,
-	pfsh: score,
-	ros: score
+	hpi: 0,
+	pfsh: 0,
+	ros: 0
 }
 

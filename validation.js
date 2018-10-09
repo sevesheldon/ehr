@@ -2,9 +2,9 @@
 
 //store current validation points
 currentScore = {
-	history : score,
-	physical: score
-	mdm : score
+	history : 0,
+	physical: 0
+	mdm : 0
 }
 //validation boolean array
 validation = {
