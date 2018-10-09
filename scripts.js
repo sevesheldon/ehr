@@ -138,10 +138,16 @@ currentMdm = {
 	data: score,
 	risk: score
 }
-function checkMdm(currentMdm, mdm = mdm){
 
+
+history = {
+	hpi: score,
+	pfsh: score,
+	ros: score
 }
-
-
-
+currentHistory = {
+	hpi: score,
+	pfsh: score,
+	ros: score
+}
 
