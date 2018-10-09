@@ -75,6 +75,8 @@ textarea, input {
     float: left;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
 nav, nav ul, nav li, nav a {
     height: 100%;
     line-height: 60px;
@@ -83,6 +85,7 @@ nav, nav ul, nav li, nav a {
     background-color: green;
 }
 
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
 
 
 
@@ -667,6 +670,7 @@ input.alert-input {
 }
 
 /* Last Row in #physical */
+<<<<<<< HEAD
 
 #physical-row7 {
     margin-top: 30px;
@@ -686,6 +690,48 @@ input.alert-input {
     width: 100%;
 }
 
+#mood {
+    margin-top: 20px
+}
+
+#next-section-psycho {
+    margin-top: 100px !important;
+}
+
+#next-section-psycho a{
+    background-color: #d1e9e7;
+    width: 268px;
+=======
+
+#physical-row7 {
+    margin-top: 30px;
+}
+
+#last-q7 {
+    float: left;
+    width: auto;
+}
+
+#mood-input {
+    float: left;
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
+}
+
+#mood-input input.alert-input {
+    margin: 0;
+    width: 100%;
+}
+
+<<<<<<< HEAD
+/* Psychotherapy */
+
+form#psycho-form {
+    margin-left: 40px;
+}
+
+#psycho-row1 {
+    margin-top: 80px;
+=======
 #mood {
     margin-top: 20px
 }
@@ -731,9 +777,31 @@ footer p {
     padding: 30px 0;
     background-color: #F3FAF9;
     margin-bottom: 0;
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
+}
+
+#psycho-form p {
+    font-size: 22px;
+}
+
+#psycho-row2 {
+    margin-top: 60px;
 }
 
 
+#gen-note {
+    margin-top: 200px;
+    padding: 12px 30px;
+}
+
+/* Footer */
+
+footer p {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #F3FAF9;
+    margin-bottom: 0;
+}
 
 
 
