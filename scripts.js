@@ -119,6 +119,21 @@ function HPI_Model(){
 
 
 
+mdm = {
+	problem: score,
+	data: score,
+	risk: score,
+	total: totalScore
+}
+currentMdm = {
+	problem: score,
+	data: score,
+	risk: score
+}
+function checkMdm(currentMdm, mdm = mdm){
+
+}
+
 
 
 
