@@ -63,14 +63,6 @@ textarea, input {
     margin: 0px 30px;
 }
 
-/*.color-bar {
-	width: 15px;
-}
-
-#intro-color-bar-1 {
-	color: #e16ea9;
-}*/
-
 
 /* Intro */
 
@@ -103,8 +95,10 @@ textarea, input {
 .sub-section-title {
 	font-weight: bold;
 	margin-top: 75px;
+    font-size: 24px;
 }
 
+/* only used <fieldset> in MDM, rest of the forms use <section> - don't know why I did this sorry */
 #problem fieldset {
 	margin: 15px 25px;
 }
@@ -210,9 +204,13 @@ table.tftable {
     margin-bottom: 50px;
 }
 
-button#gen-target-code {
+button.gen-button {
     margin: 100px auto;
-    border: 5px solid black;
+    border: 5px solid #727772;
+    width: auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .next-section {
@@ -321,6 +319,10 @@ h5#pfsh-title {
     color: #515453;
 }
 
+p.pfsh-sect-title {
+    font-size: 24px;
+}
+
 form#pfsh-form .col-sm-10, form#pfsh-form .col-sm-8  {
     float: left;
 }
@@ -337,15 +339,19 @@ textarea.pfsh-element {
     font-weight: bold;
 }
 
-/* Section 2 */
+/* Section 3 */
 
-section #pfsh-sect2 .form-group.col-sm-6 {
+section #pfsh-sect3 .form-group.col-sm-6 {
     float: left;
     margin-bottom: 25px;
 }
 
-section#pfsh-sect2 {
+section#pfsh-sect3 {
     margin: 40px 10%;
+}
+
+textarea#pfsh-q14 {
+    margin-bottom: 50px;
 }
 
 input.pfsh-checkbox {
@@ -353,12 +359,12 @@ input.pfsh-checkbox {
     margin-bottom: 15px;
 }
 
-.pfsh-sect2-q {
+.pfsh-sect3-q {
     margin-bottom: 25px;
     line-height: .5;
 }
 
-input.pfsh-sect2-input {
+input.pfsh-sect3-input {
     width: 90%;
     margin-left: 20px;
 }
@@ -633,15 +639,72 @@ input.alert-input {
     margin: 0 0 20px 40px;
 }
 
+/* Last Row in #physical */
+
+#physical-row7 {
+    margin-top: 30px;
+}
+
+#last-q7 {
+    float: left;
+    width: auto;
+}
+
+#mood-input {
+    float: left;
+}
+
+#mood-input input.alert-input {
+    margin: 0;
+    width: 100%;
+}
+
+#mood {
+    margin-top: 20px
+}
+
+#next-section-psycho {
+    margin-top: 100px !important;
+}
+
+#next-section-psycho a{
+    background-color: #d1e9e7;
+    width: 268px;
+}
 
 
+/* Psychotherapy */
+
+form#psycho-form {
+    margin-left: 40px;
+}
+
+#psycho-row1 {
+    margin-top: 80px;
+}
+
+#psycho-form p {
+    font-size: 22px;
+}
+
+#psycho-row2 {
+    margin-top: 60px;
+}
 
 
+#gen-note {
+    margin-top: 200px;
+    padding: 12px 30px;
+}
 
+/* Footer */
 
-
-
-
+footer p {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #F3FAF9;
+    margin-bottom: 0;
+}
 
 
 

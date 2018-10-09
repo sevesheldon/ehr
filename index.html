@@ -9,11 +9,13 @@
 
 		<title>E/M Encounter</title>
 
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="scripts.js" type="text/javascript"></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600" rel="stylesheet">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-		<link rel="stylesheet" type="text/css" href="/custom.css">
+		<link rel="stylesheet" type="text/css" href="custom.css">
 
 	</head>
 	<body>
@@ -21,19 +23,19 @@
 		<div id="header">
 			<nav>
 				<ul>
-					<li><a href="#">Medical Decision Making</li></a>
+					<li><a href="#">Medical Decision Making</a></li>
 				</ul>
 				<ul>
-					<li><a href="#">History</li></a>
+					<li><a href="#">History</a></li>
 				</ul>
 				<ul>
-					<li><a href="#">Physical Exam</li></a>
+					<li><a href="#">Physical Exam</a></li>
 				</ul>
 				<ul>
-					<li><a href="#">Psychotherapy</li></a>
+					<li><a href="#">Psychotherapy</a></li>
 				</ul>
 				<ul>
-					<li><a href="#">Logout</li></a>
+					<li><a href="#">Logout</a></li>
 				</ul>
 
 
@@ -86,34 +88,34 @@
 					<div id="problem">
 						<h3 class="sub-section-title">Problem :</h3>
 							<fieldset id="problem-fieldset">
-								    <div id="problem_q1" class="problem-q">
+								    <div id="problem_q1" class="problem-q textCheckbox">
 								        		
 										<input type="checkbox" class="problem-checkbox" for="problem-q1">Self-limited or minor problem (max. of 2)</input>
 										<br>
 										<input type="text" id="problem-q1" class="problem-input" name="problem-q1" /> 
-										<a class="plus-button" onclick="myFunction()"><img src="/img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>
 
-								    <div id="problem_q2" class="problem-q">
+								    <div id="problem_q2" class="problem-q textCheckbox">
 								        		
 										<input type="checkbox" class="problem-checkbox" for="problem-q2">Established problem, stable</input>
 										<br>
 										<input type="text" id="problem-q2" class="problem-input" name="problem-q2" />
-										<a class="plus-button" onclick="myFunction()"><img src="/img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>
 
-								    <div id="problem_q3" class="problem-q">
+								    <div id="problem_q3" class="problem-q textCheckbox">
 								        		
 										<input type="checkbox" class="problem-checkbox" for="problem-q3">Established problem, worsening</input>
 										<br>
 										<input type="text" id="problem-q3" class="problem-input" name="problem-q3" />
-										<a class="plus-button" onclick="myFunction()"><img src="/img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>		
 
-								    <div id="problem_q4" class="problem-q">
+								    <div id="problem_q4" class="problem-q textCheckbox">
 								        		
 										<input type="checkbox" class="problem-checkbox" for="problem-q4">New problem, no additional work-up planned (max. of 1)</input>
 										<br>
@@ -121,17 +123,17 @@
 								
 								    </div>			
 
-								    <div id="problem_q5" class="problem-q">
+								    <div id="problem_q5" class="problem-q textCheckbox">
 								        		
 										<input type="checkbox" class="problem-checkbox" for="problem-q5">New problem, additional work-up planned</input>
 										<br>
 										<input type="text" id="problem-q5" class="problem-input" name="problem-q5" />
-										<a class="plus-button" onclick="myFunction()"><img src="/img/add.svg"></a>
+										<a class="plus-button" onclick="addInput(this, 'text')"><img src="img/add.svg"></a>
 								
 								    </div>					
 							</fieldset>
 
-						<h4 id="problem-points" class="points-total">Problem Points :</h4>
+						<h4 id="problem-points" class="points-total">Problem Points :<span id="problem_score"></span></h4>
 
 					</div>
 
@@ -151,7 +153,7 @@
 									<input type="checkbox" class="data-reviewed-checkbox" for="data-reviewed-q3">Review or order tests in the medicine section (echo, EKG, LHC, PFTs)</input>
 								</div>
 
-								<div id="data-reviewed_q4" class="data-reviewed-q">
+								<div id="data-reviewed_q4" class="data-reviewed-q textCheckbox">
 								        		
 									<input type="checkbox" class="data-reviewed-checkbox" for="data-reviewed-q4">Discussion of test results with performing MD</input>
 									<br>
@@ -159,7 +161,7 @@
 							
 							    </div>
 
-							    <div id="data-reviewed_q5" class="data-reviewed-q">
+							    <div id="data-reviewed_q5" class="data-reviewed-q textCheckbox">
 								        		
 									<input type="checkbox" class="data-reviewed-checkbox" for="data-reviewed-q5">Independent review of image, tracing or specimen</input>
 									<br>
@@ -167,7 +169,7 @@
 							
 							    </div>
 
-							    <div id="data-reviewed_q6" class="data-reviewed-q">
+							    <div id="data-reviewed_q6" class="data-reviewed-q textCheckbox">
 								        		
 									<input type="checkbox" class="data-reviewed-checkbox" for="data-reviewed-q6">Decision to obtain old records</input>
 									<br>
@@ -175,7 +177,7 @@
 							
 							    </div>
 
-							    <div id="data-reviewed_q7" class="data-reviewed-q">
+							    <div id="data-reviewed_q7" class="data-reviewed-q textCheckbox">
 								        		
 									<input type="checkbox" class="data-reviewed-checkbox" for="data-reviewed-q7">Review and summation of old records</input>
 									<br>
@@ -184,7 +186,7 @@
 							    </div>
 							</fieldset>
 
-						<h4 id="data-points" class="points-total">Data Points :</h4>	
+						<h4 id="data-points" class="points-total">Data Points :<span id="data_score"></span></h4>	
 
 					</div>
 
@@ -196,22 +198,25 @@
 									  <label for="risk">Select from the dropdown menu:</label>
 									  <select class="form-control" id="risk">
 									  	<option value="" selected disabled>Please select one of the following</option>
-									    <option>Having only one minor (self-limiting) problem</option>
-									    <option>Stopping, starting, or changing Rx (other than LiCo)</option>
-									    <option>Drug therapy requiring intensive monitoring for toxicity</option>
-									    <option>Having only 1 well-controlled chronic illness</option>
-									    <option>Having 1+ worsening chronic illness</option>
-									    <option>Having 2+ well-controlled chronic illnesses</option>
-									    <option>A new problem with uncertain diagnosis</option>
-									    <option>Severe exacerbation of chronic illness</option>
-									    <option>Acute symptoms with potential threat to self or others</option>
-									    <option>An abrupt change in neurologic status</option>
+									 
+									    <option value="low">having only 1 well-controlled chronic illness</option>
+									    <option value="low">Having only one minor (self-limiting) problem</option>
+									    <option value="moderate">Stopping, starting, or changing Rx (other than LiCo)</option>
+									    <option value="moderate">Drug therapy requiring intensive monitoring for toxicity</option>
+									    
+									    <option value="moderate">Having 1+ worsening chronic illness</option>
+									    <option value="moderate">Having 2+ well-controlled chronic illnesses</option>
+									    <option value="moderate">A new problem with uncertain diagnosis</option>
+									    <option value="high">Severe exacerbation of chronic illness</option>
+									    <option value="high">Acute symptoms with potential threat to self or others</option>
+									    <option value="high">drug therapy requiring intensive monitoring for toxicity</option>
+									    <option value="high">An abrupt change in neurologic status</option>
 									  </select>
 									</div>  
 								</div>
 							</fieldset>
 
-						<h4 id="level-of-risk" class="points-total">Level of Risk :</h4>
+						<h4 id="level-of-risk" class="points-total">Level of Risk :<span id="risk_score"></span></h4>
 							
 					</div>
 
@@ -228,16 +233,16 @@
 							</table>
 						</div>
 
-						<button id="gen-target-code">Generate Target Code</button>
+						<button id="gen-target-code" class="gen-button">Generate Target Code</button>
 
 					</div>
 
 					<div id="next-section-history" class="next-section">
 						<p style="text-align: center;">Click to continue:</p>
-						<a href="#">Next Section: <strong>History</strong></a>
+						<a href="">Next Section: <strong>History</strong></a>
 					</div>
 					<div class="arrow-down">
-						<a href="#"><i class="down"></i></a>
+						<a href=""><i class="down"></i></a>
 					</div>
 
 				</div>
@@ -264,7 +269,7 @@
 								</div>
 							</section>
 							
-							<section class="clearfix">
+							<section class="clearfix" id="hpi_validate">
 								<div class="form-group col-sm-6">
 									<label for="HPIduration" class="col-sm-4 control-label">Duration</label>
 									<div class="col-sm-8">
@@ -302,6 +307,7 @@
 									</div>
 								</div>
 							</section>
+							<h1>HPI Score: <span id="hpi_score"></span></h1>
 						</form>
 
 						<div id="add-notes-hpi" class="add-notes">
@@ -317,15 +323,21 @@
 				    <div id="pfsh">
 
 					    <h5 id="pfsh-title" class="sub-section-title">Past Medical, Family and Social History:</h5>					   
-					    
+					    <h1>PFSH Score: <span id="pfsh_score"></span></h1>
 					    <form id="pfsh-form">					
 					    	<p>Please write in complete sentences</p>
 							<section id="pfsh-sect1" class="clearfix">
+								<p id="pfsh-med" class="pfsh-sect-title">Medical</p>
 								<div class="form-group col-sm-12">
 									<label for="pfsh-q1" class="col-sm-4 control-label">Pertinent medical info from the intake questionnaire, and/or patient's current list of medications and allergies:</label>
 									<div class="col-sm-8">
 										<textarea class="form-control pfsh-element" id="pfsh-q1" name="pfsh-q1" rows="4"></textarea>
 									</div>
+								</div>
+							</section>
+							<section id="pfsh-sect2" class="clearfix">
+								<p id="pfsh-fam" class="pfsh-sect-title">Family</p>
+								<div class="form-group col-sm-12">
 									<label for="pfsh-q2" class="col-sm-4 control-label">Pertinent family history from intake questionnaire:</label>
 									<div class="col-sm-8">
 										<textarea class="form-control pfsh-element" id="pfsh-q2" name="pfsh-q2" rows="4"></textarea>
@@ -374,69 +386,68 @@
 									<div class="col-sm-10">
 										<textarea class="form-control pfsh-element" id="pfsh-q13" name="pfsh-q13" rows="2"></textarea>
 									</div>
-									<label for="pfsh-q14" class="col-sm-4 control-label">Pertinent social issues affecting health:</label>
-									<div class="col-sm-8">
-										<textarea class="form-control pfsh-element" id="pfsh-q14" name="pfsh-q14" rows="4"></textarea>
-									</div>	
 								</div>
 							</section>
 
-							<section id="pfsh-sect2" class="clearfix">
-								<p>Check boxes for "Yes"</p>
+							<section id="pfsh-sect3" class="clearfix">
+								<p id="pfsh-soc" class="pfsh-sect-title">Social</p>
+								<label for="pfsh-q14" class="col-sm-4 control-label">Pertinent social issues affecting health:</label>
+								<div class="col-sm-8">
+									<textarea class="form-control pfsh-element" id="pfsh-q14" name="pfsh-q14" rows="4"></textarea>
+								</div>
+									<p>Check boxes for "Yes"</p>
 								<div class="form-group col-sm-6">
-									<div id="pfsh-sect2-q1" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q1">Has a job?</input>
+									<div id="pfsh-sect3-q1" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q1">Has a job?</input>
 									</div>
-									<div id="pfsh-sect2-q2" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q2">Has a car?</input>
+									<div id="pfsh-sect3-q2" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q2">Has a car?</input>
 									</div>
-									<div id="pfsh-sect2-q3" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q3">Birth by C-section?</input>
+									<div id="pfsh-sect3-q3" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q3">Birth by C-section?</input>
 									</div>
-									<div id="pfsh-sect2-q4" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q4">Has a gallbladder?</input>
+									<div id="pfsh-sect3-q4" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q4">Has a gallbladder?</input>
 									</div>
-									<div id="pfsh-sect2-q5" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q5">Gastric bypass surgery?</input>
+									<div id="pfsh-sect3-q5" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q5">Gastric bypass surgery?</input>
 									</div>
-									<div id="pfsh-sect2-q6" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q6">Speech or physical therapy?</input>
+									<div id="pfsh-sect3-q6" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q6">Speech or physical therapy?</input>
 									</div>
-									<div id="pfsh-sect2-q7" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q7">Ear tubes?</input>
+									<div id="pfsh-sect3-q7" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q7">Ear tubes?</input>
 									</div>
-									<div id="pfsh-sect2-q8" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q8">Learned to read at normal age?</input>
-										<input type="text"  class="pfsh-sect2-input" name="pfsh-sect2-q8" placeholder="Please elaborate"/> 
+									<div id="pfsh-sect3-q8" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q8">Learned to read at normal age?</input>
+										<input type="text"  class="pfsh-sect3-input" name="pfsh-sect3-q8" placeholder="Please elaborate"/> 
 									</div>
 								</div>
 
-
-
 								<div class="form-group col-sm-6">
-									<div id="pfsh-sect2-q9" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q9">Moved around a lot?</input>
+									<div id="pfsh-sect3-q9" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q9">Moved around a lot?</input>
 									</div>
-									<div id="pfsh-sect2-q10" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q10">Was your father present in your life?</input>
+									<div id="pfsh-sect3-q10" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q10">Was your father present in your life?</input>
 									</div>
-									<div id="pfsh-sect2-q11" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q11">Did you suffer physical, mental or sexual abuse as a child?</input>
+									<div id="pfsh-sect3-q11" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q11">Did you suffer physical, mental or sexual abuse as a child?</input>
 									</div>
-									<div id="pfsh-sect2-q12" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q12">Were you bullied?</input>
+									<div id="pfsh-sect3-q12" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q12">Were you bullied?</input>
 									</div>
-									<div id="pfsh-sect2-q13" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q13">Did you suffer any public humiliation?</input>
+									<div id="pfsh-sect3-q13" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q13">Did you suffer any public humiliation?</input>
 									</div>
-									<div id="pfsh-sect2-q14" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q14">Do people tell you that you don’t think things through?</input>
+									<div id="pfsh-sect3-q14" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q14">Do people tell you that you don’t think things through?</input>
 									</div>
-									<div id="pfsh-sect2-q15" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q15">Do you think you don’t think things through?</input>
+									<div id="pfsh-sect3-q15" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q15">Do you think you don’t think things through?</input>
 									</div>
-									<div id="pfsh-sect2-q16" class="pfsh-sect2-q">
-										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect2-q16">Viral or bacterial infection as a child that changed your personality in any way?</input>
+									<div id="pfsh-sect3-q16" class="pfsh-sect3-q">
+										<input type="checkbox" class="pfsh-checkbox" for="pfsh-sect3-q16">Viral or bacterial infection as a child that changed your personality in any way?</input>
 									</div>
 								</div>
 
@@ -845,7 +856,7 @@
 									<input type="checkbox" class="body-checkbox" for="risk-q1">SI / HI</input>
 								</div>
 								<div id="risk-q2" class="risk-q">
-									<input type="checkbox" class="body-checkbox" for="risk-q2"> Hallucinations</input>
+									<input type="checkbox" class="body-checkbox" for="risk-q2">Hallucinations</input>
 								</div>
 								<div id="risk-q3" class="risk-q">
 									<input type="checkbox" class="body-checkbox" for="risk-q3">Delusions</input>
@@ -884,12 +895,113 @@
 							</div>
 						</div>
 					</div>
+					<div id="physical-row7" class="row">
+						<div class="form-group col-sm-12">
+							<div id="last-physical">
+								<p>Check the following boxes for "Yes", otherwise explain in the text field:</p>
+								<div id="last-q1" class="last-q">
+										<input type="checkbox" class="alert-checkbox" for="last-q1">Judgement and insight intact?</input>
+										<input type="text"  class="alert-input" name="last-q1" placeholder="ie. Loose judgement/insight"/> 
+								</div>
+								<div id="last-q2" class="last-q">
+										<input type="checkbox" class="alert-checkbox" for="last-q2">Recent and remote memory intact?</input>
+										<input type="text"  class="alert-input" name="last-q2" placeholder="ie. Recent and remote memory is loose"/> 
+								</div>
+								<div id="last-q3" class="last-q">
+										<input type="checkbox" class="alert-checkbox" for="last-q3">Normal attention span and concentration?</input>
+										<input type="text"  class="alert-input" name="last-q3" placeholder="is. Attention span/concentration is below average"/> 
+								</div>
+								<div id="last-q4" class="last-q">
+										<input type="checkbox" class="alert-checkbox" for="last-q4">Normal language? (such as naming objects or repeating phrases)</input>
+										<input type="text"  class="alert-input" name="last-q4" placeholder=""/> 
+								</div>
+								<div id="last-q5" class="last-q">
+										<input type="checkbox" class="alert-checkbox" for="last-q5">Normal fund of knowledge?</input>
+										<input type="text"  class="alert-input" name="last-q5" placeholder=""/> 
+								</div>
+								<div id="last-q6" class="last-q">
+										<input type="checkbox" class="alert-checkbox" for="last-q6">Normal gait and station?</input>
+										<input type="text"  class="alert-input" name="last-q6" placeholder=""/> 
+								</div>
+								<br>
+								<div id="mood">
+									<label for="last-q7" id="last-q7" class="col-sm-2 control-label pfsh-bold">Mood is</label>
+									<div id="mood-input" class="col-sm-10">
+										<input type="text" class="alert-input" name="last-q7"/> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					
 				</form>
 
+				<div id="next-section-psycho" class="next-section">
+						<p style="text-align: center;">Click to continue:</p>
+						<a href="#">Next Section: <strong>Psychotherapy</strong></a>
+					</div>
+					<div class="arrow-down">
+						<a href="#"><i class="down"></i></a>
+					</div>
+
+			</section>
+			<section id="psycho-section">
+				<h2 id="psycho-title" class="section-title">Psychotherapy</h2>
+
+				<form id="psycho-form">
+					<div id="psycho-row1" class="row">
+						<div id="minutes" class="col-sm-12">
+							<p>Minutes of Psychotherapy performed:</p>
+							<div id="minutes-q1" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="minutes-q1">Less than 16</input>
+								</div>
+								<div id="minutes-q2" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="minutes-q2">16 - 37</input>
+								</div>
+								<div id="minutes-q3" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="minutes-q3">38 - 52</input>
+								</div>
+								<div id="minutes-q4" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="minutes-q4">53 - 60</input>
+								</div>
+							</div>
+						</div>
+						<div id="psycho-row2" class="row">
+							<div id="type" class="col-sm-12">
+								<p>Type of Psychotherapy performed:</p>
+								<div id="type-q1" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="type-q1">CBT and review of CBT homework</input>
+								</div>
+								<div id="type-q2" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="type-q2">Interpersonal therapy</input>
+								</div>
+								<div id="type-q3" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="type-q3">Training on automatic thoughts</input>
+								</div>
+								<div id="type-q4" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="type-q4">Evaluation for SI</input>
+								</div>
+								<div id="type-q5" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="type-q5">Symptoms ratings scales</input>
+								</div>
+								<div id="type-q6" class="risk-q">
+									<input type="checkbox" class="body-checkbox" for="type-q6">Other</input>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</form>
+			
 			</section>
 
+			<button id="gen-note" class="gen-button">Generate Note</button>
+
 		</div>
+
+		<footer>
+			<p>Copyright 2018</p>
+		</footer>
 
 	</body>
 
