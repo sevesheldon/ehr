@@ -14,15 +14,15 @@ validation = {
 }
 //set of validation rules
 validationScores = {
-	targetCode : {
-		history : score,
-		physical: score,
-		mdm : score
+	99201 : {
+		history : 1,
+		physical: 1,
+		mdm : 1
 	},
-	targetCode : {
-		history : score,
-		physical: score,
-		mdm : score
+	99202 : {
+		history : 2,
+		physical: 2,
+		mdm : 1
 	},
 }
 
