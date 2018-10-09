@@ -2,7 +2,11 @@ $( document ).ready(function() {
     
 
     console.log( "ready!" );
+<<<<<<< HEAD
     
+=======
+    patient();
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
     textCheckboxTrigger();
 
     simpleScoringModel('#problem', '#problem input[type="text"]', '#problem_score');
@@ -27,7 +31,17 @@ $("#next-section-history a").click(function() {
     }, 750);
 });
 
+<<<<<<< HEAD
 
+=======
+function patient(){
+	$("#est-new-patient button").on('click', function(){
+		$("#est-new-patient button").removeClass('clicked');
+		$(this).addClass('clicked');
+		$("#patient_status").html( $(this).html() );
+	})
+}
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
 function addInput(elem, type){
 	parent = $(elem).parent();
 	sibling = $(parent).find('input[type="'+ type +'"]');

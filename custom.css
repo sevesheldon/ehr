@@ -49,21 +49,49 @@ textarea, input {
 /* Header */
 
 #header {
-	height: 75px;
-	min-height: 50px;
-	padding-top: 10px;
-	margin-bottom: 20px;
-	background-color: #f2faf9;
-	border-bottom: 3px solid #717872;
+	height: 65px;
+    min-height: 50px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    background-color: #f2faf9;
+    position: fixed;
+    border-bottom: 3px solid #717872;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999999;
 }
+#header nav ul {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 
+}
 #header nav ul li {
     list-style-type: none;
     float: left;
-    margin: 0px 30px;
+    text-align: center;
+}
+<<<<<<< HEAD
+=======
+nav, nav ul, nav li, nav a {
+    height: 100%;
+    line-height: 60px;
+}
+#header nav ul li.valid {
+    background-color: green;
 }
 
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
 
+
+
+#wrapper {
+    padding: 100px 0 0;
+}
 /* Intro */
 
 #est-new-patient .row .col {
@@ -125,7 +153,9 @@ input.problem-input {
 .points-total {
 	font-weight: bold;
 	float: right;
-	margin: 50px 200px 200px 0;
+	margin: 50 0;
+    float: left;
+    clear: both;
 }
 
 
@@ -640,6 +670,7 @@ input.alert-input {
 }
 
 /* Last Row in #physical */
+<<<<<<< HEAD
 
 #physical-row7 {
     margin-top: 30px;
@@ -659,6 +690,48 @@ input.alert-input {
     width: 100%;
 }
 
+#mood {
+    margin-top: 20px
+}
+
+#next-section-psycho {
+    margin-top: 100px !important;
+}
+
+#next-section-psycho a{
+    background-color: #d1e9e7;
+    width: 268px;
+=======
+
+#physical-row7 {
+    margin-top: 30px;
+}
+
+#last-q7 {
+    float: left;
+    width: auto;
+}
+
+#mood-input {
+    float: left;
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
+}
+
+#mood-input input.alert-input {
+    margin: 0;
+    width: 100%;
+}
+
+<<<<<<< HEAD
+/* Psychotherapy */
+
+form#psycho-form {
+    margin-left: 40px;
+}
+
+#psycho-row1 {
+    margin-top: 80px;
+=======
 #mood {
     margin-top: 20px
 }
@@ -704,9 +777,36 @@ footer p {
     padding: 30px 0;
     background-color: #F3FAF9;
     margin-bottom: 0;
+>>>>>>> 2d51b898ae728421b2df4ad29422afe674ca2258
+}
+
+#psycho-form p {
+    font-size: 22px;
+}
+
+#psycho-row2 {
+    margin-top: 60px;
+}
+
+
+#gen-note {
+    margin-top: 200px;
+    padding: 12px 30px;
+}
+
+/* Footer */
+
+footer p {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #F3FAF9;
+    margin-bottom: 0;
 }
 
 
 
+td.valid{
+    background-color: green;
+}
 
 
